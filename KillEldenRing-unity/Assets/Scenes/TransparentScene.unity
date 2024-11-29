@@ -523,7 +523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextField_: {fileID: 28311928}
   PreText_: 'Woman Slained: '
-  ScoreFile_: {fileID: 4900000, guid: a715d6e69f83d7d48aba32cb2329ace5, type: 3}
+  ScoreFilePath_: ScoreCount.txt
 --- !u!1 &1003513825
 GameObject:
   m_ObjectHideFlags: 0
