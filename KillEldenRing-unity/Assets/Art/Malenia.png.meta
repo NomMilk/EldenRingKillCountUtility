@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Malenia_0: 8723752188008574066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
