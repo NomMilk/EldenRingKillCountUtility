@@ -26,6 +26,7 @@ public class OverlayScript : MonoBehaviour
 
     const uint WS_EX_LAYERED = 0X00080000;
     const uint WS_EX_TRANSPARENT = 0x00000020;
+    const uint WS_EX_TOPMOST = 0x00000008;
 
     static readonly IntPtr HWND_TOPMOST = new IntPtr(-1);
 
@@ -37,7 +38,7 @@ public class OverlayScript : MonoBehaviour
             MARGINS margins = new MARGINS {cxLeftWidth = -1};
             DwmExtendFrameIntoClientArea(hWnd, ref margins);
 
-            SetWindowLong(hWnd, GWL_EXSTYLE, WS_EX_LAYERED | WS_EX_TRANSPARENT);
+            SetWindowLong(hWnd, GWL_EXSTYLE, WS_EX_LAYERED | WS_EX_TRANSPARENT | WS_EX_TOPMOST);
             SetWindowPos(hWnd, HWND_TOPMOST, 0, 0, 0, 0, 0);
         #endif
     }
