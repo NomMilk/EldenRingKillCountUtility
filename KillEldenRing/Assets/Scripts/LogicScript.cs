@@ -4,11 +4,11 @@ public class LogicScript : MonoBehaviour
 {
     [SerializeField] TMP_Text TextField_;
     [SerializeField] string PreText_;
-    [SerializeField] int CurrentValue_ = 0;
+    [SerializeField] TextAsset ScoreFile_;
     
     void UpdateValue()
     {
-        TextField_.text = PreText_ + CurrentValue_.ToString();
+        TextField_.text = PreText_ + ScoreFile_.ToString();
     }
 
     void Update()
