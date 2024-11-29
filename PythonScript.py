@@ -1,9 +1,8 @@
 import pyautogui
 import time
-import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel
-from PyQt5.QtCore import Qt
+import os
 
+os.startfile("KillEldenRing.exe")
 Value = int(open("ScoreCount.txt", "r").read())
 while True:
     try:
